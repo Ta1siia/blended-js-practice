@@ -78,14 +78,56 @@
 // Корисне посилання для відображення годин та хвилин у потрібному форматі ('01' замість '1'):
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart#examples
 
-const minutes = Number(prompt('Введіть кількість хвилин'));
+// const minutes = Number(prompt('Введіть кількість хвилин'));
 
-const hours = Math.floor(minutes / 60);
-const mins = minutes % 60;
+// const hours = Math.floor(minutes / 60);
+// const mins = minutes % 60;
 
-const result = `${String(hours).padStart(2, '0')}:${String(mins).padStart(2, '0')}`;
+// const result = `${String(hours).padStart(2, '0')}:${String(mins).padStart(2, '0')}`;
 
-console.log(result);
+// console.log(result);
+
+// Task 5
+
+// Напишіть код, який запитуватиме у користувача
+// логін за допомогою prompt і виводить результат в консоль браузера
+
+// Після цього додайте перевірку введеного користувачем значення:
+// Якщо відвідувач вводить "Адмін",
+// то prompt запитує пароль (не забудьте зберігти його у змінну для подальшої перевірки).
+// Якщо нічого не ввели або натиснули Cancel,
+// Вивести в alert строку "Скасовано"
+// В іншому випадку вивести в alert рядок "Я вас не знаю"
+
+// Пароль перевіряти так:
+// Якщо введено пароль "Я головний",
+// то вивести в alert рядок "Добрий день!",
+// в іншому випадку вивести в alert рядок "Невірний пароль!"
+
+// const login = prompt('Введіть логін');
+// console.log(login);
+// if (login === 'Адмін') {
+//   let password = prompt('Введіть пароль');
+//   if (password === 'Я головний') {
+//     alert('Добрий день!');
+//   } else {
+//     alert('Невірний пароль!');
+//   }
+// } else if (login === '' || login === null) {
+//   alert('Скасовано');
+// } else {
+//   alert('Я вас не знаю');
+// }
+
+// Task 6
+
+// Використайте цикл while, щоб вивести в console всі числа від 0 до 20 включно.
+
+// let i = 0;
+// while (i < 20) {
+//   i += 1;
+//   console.log(i);
+// }
 
 // Task 7
 
@@ -127,3 +169,37 @@ console.log(result);
 //   return a < b ? a : b;
 // }
 // console.log(min(12, 13));
+
+// Task 9
+
+// Напишіть функцію isAdult(age), яка  приймає число - вік користувача і повертає true,
+// якщо параметр age більше чи дорівнює 18.
+// В іншому випадку вона запитує підтвердження через confirm
+// і повертає його результат (true/false).
+
+// function isAdult(age) {
+//   if (age >= 18) {
+//     return true;
+//   } else {
+//     return confirm('Вам вже є 18 років?');
+//   }
+// }
+
+// Task 10
+
+// Напишіть функцію fizzBuzz(num), яка приймає число і перевіряє кожне число від 1 до num:
+// Якщо число ділитися  без остачі на 3 - виводить в консоль 'fizz',
+// якщо ділиться  без остачі на 5 - виводить в консоль 'buzz',
+// якщо ділиться  без остачі і на 3, і на 5 - виводить в консоль 'fizzbuzz'.
+
+// function fizzBuzz(num) {
+//   for (let i = 1; i <= num; i++) {
+//     if (i % 3 === 0 && i % 5 === 0) {
+//       console.log('fizzbuzz');
+//     } else if (i % 3 === 0) {
+//       console.log('fizz');
+//     } else if (i % 5 === 0) {
+//       console.log('buzz');
+//     }
+//   }
+// }
